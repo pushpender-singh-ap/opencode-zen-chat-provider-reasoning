@@ -58,3 +58,12 @@ Open the command palette (`Ctrl/Cmd+Shift+P`):
 - Tool calling is supported by streaming `LanguageModelToolCallPart` from the provider.
 - Tool execution is handled by the caller (VS Code) by sending back `LanguageModelToolResultPart` on the next request.
 - If no API key is configured, requests use `apiKey: public` and only free OpenCode Zen models are shown (matching opencode behavior).
+
+## Credits
+
+This extension is a fork of `wienans/vsc-opencode-zen-chat-provider`.
+
+This fork adds DeepSeek V4, Kimi 2.6 `reasoning_content` replay support for OpenCode Zen Go models, fixing the issue where thinking-mode tool calls fail because `reasoning_content` is not passed back to the API.
+
+Original project: https://github.com/wienans/vsc-opencode-zen-chat-provider  
+License: MIT
